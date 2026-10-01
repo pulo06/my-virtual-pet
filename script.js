@@ -1479,7 +1479,7 @@ state.lamp =
 
 speak(
 state.lamp
-? "zzz."
+? "ohhh"
 : "sweet dreams."
 );
 
