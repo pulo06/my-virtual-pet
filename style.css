@@ -61,9 +61,6 @@ cursor: pointer;
 }
 
 
-/* ================================
-HEADER
-================================ */
 
 .app {
 width: min(1180px, 94%);
@@ -89,13 +86,15 @@ margin-bottom: 18px;
 .eyebrow {
 margin: 0 0 2px;
 
-font-size: 12px;
+font-size: 17px;
 
 letter-spacing: 1.5px;
 
 text-transform: uppercase;
 
-color: #a27e88;
+color: #9f7f89;
+
+font-weight: 900;
 }
 
 
@@ -114,13 +113,15 @@ font-weight: 700;
 .pulo-name {
 margin: -2px 0 0 3px;
 
-font-size: 13px;
+font-size: 17px;
 
 color: #a47b86;
 
 font-weight: 600;
 
 letter-spacing: 1px;
+
+font-weight: 900;
 }
 
 
@@ -172,9 +173,7 @@ border-radius: 50%;
 }
 
 
-/* ================================
-MAIN
-================================ */
+
 
 .game-shell {
 display: grid;
@@ -187,9 +186,7 @@ gap: 18px;
 }
 
 
-/* ================================
-ROOM
-================================ */
+
 
 .room {
 height: 680px;
@@ -232,9 +229,7 @@ z-index: 2;
 }
 
 
-/* ================================
-WALL DECOR
-================================ */
+
 
 .wall-stars i {
 position: absolute;
@@ -281,11 +276,6 @@ top: 11%;
 left: 30%;
 top: 25%;
 }
-
-
-/* ================================
-FAIRY LIGHTS
-================================ */
 
 .fairy-lights {
 position: absolute;
@@ -373,9 +363,7 @@ box-shadow:
 }
 
 
-/* ================================
-WINDOW
-================================ */
+
 
 .window {
 position: absolute;
@@ -574,9 +562,6 @@ bottom: 22px;
 }
 
 
-/* ================================
-NIGHT WINDOW
-================================ */
 
 .room.night .window {
 background:
@@ -603,24 +588,6 @@ opacity: .08;
 .room.night .night-stars {
 opacity: 1;
 }
-
-
-/* ================================
-NORMAL LITTLE TABLE
-================================ */
-
-.side-table {
-position: absolute;
-
-right: 55px;
-top: 225px;
-
-width: 150px;
-height: 145px;
-
-z-index: 4;
-}
-
 
 .table-top {
 position: absolute;
@@ -667,6 +634,8 @@ right: 15px;
 }
 
 
+
+
 .table-drawer {
 position: absolute;
 
@@ -701,8 +670,6 @@ left: 24px;
 top: 15px;
 }
 
-
-/* table objects */
 
 .table-object {
 position: absolute;
@@ -763,20 +730,18 @@ box-shadow:
 }
 
 
-/* ================================
-LAMP
-================================ */
+
 
 .lamp {
 position: absolute;
 
-right: 92px;
-bottom: 165px;
+right: 125px;
+bottom: 168px;
 
 width: 80px;
-height: 180px;
+height: 170px;
 
-z-index: 8;
+z-index: 9;
 
 cursor: pointer;
 }
@@ -876,82 +841,6 @@ box-shadow:
 opacity: 1;
 }
 
-
-/* ================================
-BED
-================================ */
-
-.bed {
-position: absolute;
-
-right: 35px;
-bottom: 45px;
-
-width: 250px;
-height: 175px;
-
-background: #f7b8cc;
-
-border-radius:
-25px 25px 12px 12px;
-
-border:
-7px solid #d99cab;
-
-z-index: 3;
-}
-
-
-.pillow {
-position: absolute;
-
-left: 18px;
-top: 18px;
-
-width: 78px;
-height: 48px;
-
-border-radius: 18px;
-
-background: #fff6f4;
-}
-
-
-.blanket {
-position: absolute;
-
-right: 0;
-top: 55px;
-
-width: 165px;
-height: 115px;
-
-border-radius:
-35px 8px 8px 8px;
-
-background: #f4cad7;
-}
-
-
-.bed-leg {
-position: absolute;
-
-left: 20px;
-bottom: -18px;
-
-width: 15px;
-height: 20px;
-
-background: #b57c76;
-
-box-shadow:
-190px 0 #b57c76;
-}
-
-
-/* ================================
-FLOOR
-================================ */
 
 .rug {
 position: absolute;
@@ -1064,9 +953,6 @@ transform: rotate(-12deg);
 }
 
 
-/* ================================
-BEAR
-================================ */
 
 .pet-wrap {
 position: absolute;
@@ -1136,7 +1022,6 @@ translateY(-4px);
 }
 
 
-/* EARS */
 
 .ear {
 position: absolute;
@@ -1180,7 +1065,7 @@ right: 17px;
 }
 
 
-/* HEAD */
+
 
 .head {
 position: absolute;
@@ -1203,7 +1088,6 @@ z-index: 3;
 }
 
 
-/* EYES */
 
 .eye {
 position: absolute;
@@ -1253,7 +1137,6 @@ right: 40px;
 }
 
 
-/* CLOSED EYES */
 
 .room.night .eye {
 height: 4px;
@@ -1272,7 +1155,7 @@ opacity: 0;
 }
 
 
-/* MUZZLE */
+
 
 .muzzle {
 position: absolute;
@@ -1345,7 +1228,6 @@ right: 14px;
 }
 
 
-/* BODY */
 
 .body {
 position: absolute;
@@ -1383,7 +1265,6 @@ background: #e6b092;
 }
 
 
-/* CUTER ARMS */
 
 .arm {
 position: absolute;
@@ -1424,7 +1305,6 @@ rotate(-28deg);
 }
 
 
-/* tiny paws */
 
 .arm::after {
 content: "";
@@ -1471,9 +1351,7 @@ right: 5px;
 }
 
 
-/* ================================
-ACCESSORIES
-================================ */
+
 
 .accessory {
 position: absolute;
@@ -1486,7 +1364,7 @@ pointer-events: none;
 }
 
 
-/* BOW */
+
 
 .accessory.bow::before,
 .accessory.bow::after {
@@ -1541,7 +1419,7 @@ top: 10px;
 }
 
 
-/* CROWN */
+
 
 .accessory.crown::before {
 content: "";
@@ -1572,9 +1450,8 @@ border:
 }
 
 
-/* BERET */
 
-.accessory.beret::before {
+.accessory.towel::before {
 content: "";
 
 position: absolute;
@@ -1598,7 +1475,6 @@ rotate(-7deg);
 }
 
 
-/* FLOWER */
 
 .accessory.flower::before {
 content: "";
@@ -1639,9 +1515,7 @@ background: #f6d477;
 }
 
 
-/* ================================
-SPEECH
-================================ */
+
 
 .speech {
 position: absolute;
@@ -1706,9 +1580,7 @@ z-index: 14;
 }
 
 
-/* ================================
-SIDEBAR
-================================ */
+
 
 .sidebar {
 display: flex;
@@ -1797,7 +1669,6 @@ font-size: 11px;
 }
 
 
-/* MINI BEAR */
 
 .mini-bear {
 width: 42px;
@@ -1844,9 +1715,7 @@ right: -3px;
 }
 
 
-/* ================================
-STATS
-================================ */
+
 
 .stats-card {
 padding: 17px;
@@ -1931,9 +1800,7 @@ width .35s;
 }
 
 
-/* ================================
-ACTION BUTTONS
-================================ */
+
 
 .actions {
 display: grid;
@@ -1993,9 +1860,7 @@ margin-top: 2px;
 }
 
 
-/* ================================
-ACTION ICONS
-================================ */
+
 
 .svg-icon {
 display: block;
@@ -2227,9 +2092,7 @@ rotate(20deg);
 }
 
 
-/* ================================
-TIP
-================================ */
+
 
 .tip-card {
 display: flex;
@@ -2288,9 +2151,7 @@ polygon(
 }
 
 
-/* ================================
-MODAL
-================================ */
+
 
 .modal {
 position: fixed;
@@ -2378,9 +2239,7 @@ margin:
 }
 
 
-/* ================================
-CHOICES
-================================ */
+
 
 .food-grid,
 .wardrobe-grid,
@@ -2509,7 +2368,7 @@ polygon(
 }
 
 
-.outfit-beret::before {
+.outfit-towel::before {
 content: "";
 
 position: absolute;
@@ -2611,7 +2470,7 @@ top: 20px;
 }
 
 
-.food-berry::before {
+.food-cookies::before {
 content: "";
 
 position: absolute;
@@ -2717,9 +2576,6 @@ font-size: 11px;
 }
 
 
-/* ================================
-GAMES
-================================ */
 
 .game-box {
 padding: 15px;
@@ -2853,9 +2709,6 @@ text-align: left;
 }
 
 
-/* ================================
-BIG ACTION SPARKLES
-================================ */
 
 .action-sparkle {
 position: fixed;
@@ -2943,10 +2796,6 @@ rotate(90deg);
 }
 
 
-/* ================================
-SMALL BACKGROUND SPARKLES
-================================ */
-
 .spark {
 position: fixed;
 
@@ -2991,9 +2840,7 @@ rotate(90deg);
 }
 
 
-/* ================================
-NIGHT ROOM
-================================ */
+
 
 .room.night {
 background:
@@ -3052,9 +2899,7 @@ box-shadow:
 }
 
 
-/* ================================
-RESPONSIVE
-================================ */
+
 
 @media (max-width: 850px) {
 
@@ -3099,15 +2944,7 @@ top left;
 }
 
 
-.side-table {
-right: 15px;
-top: 190px;
 
-transform: scale(.75);
-
-transform-origin:
-top right;
-}
 
 
 .lamp {
@@ -3162,5 +2999,292 @@ left: 4%;
 grid-template-columns:
 1fr 1fr;
 }
+}
+.name-card span 
+.tiny-button,
+.stat > div:first-child span,
+.action small,
+.tip-card p,
+.card-title{
+    font-weight: 600;
+}    
 
+.talk-choice {
+    font-weight: 600;
+}
+.eyebrow,
+.signature,
+.name-card span,
+.tiny-button,
+.card-title,
+.stat span,
+.stat b,
+.action b,
+.action small,
+.tip-card p,
+.modal-sub,
+.choice b,
+.choice small,
+.talk-choice,
+.game-box h3,
+.game-box p,
+.reward,
+.close {
+color: #6f5b62;
+}
+
+/* make the softer text slightly stronger */
+
+.eyebrow,
+.signature,
+.name-card span,
+.tiny-button,
+.stat span,
+.action small,
+.tip-card p,
+.modal-sub,
+.choice small,
+.game-box p,
+.reward,
+.close {
+font-weight: 600;
+}
+
+/* main interactive text */
+
+.talk-choice,
+.choice b,
+.game-box h3,
+.action b,
+.card-title,
+.stat b {
+font-weight: 600;
+}
+
+.photo-frame {
+position: absolute;
+top: 115px;
+left: 58%;
+width: 105px;
+height: 125px;
+padding: 9px;
+background: #f6eee9;
+border: 4px solid #d3aeb0;
+border-radius: 7px;
+box-shadow: 0 6px 12px rgba(95, 67, 72, 0.12);
+transform: rotate(0deg);
+z-index: 6;
+}
+
+.photo-inner {
+width: 100%;
+height: 100%;
+background: #f3d5dc;
+border-radius: 3px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 9px;
+color: #80636b;
+font-size: 9px;
+font-weight: 600;
+text-align: center;
+}
+
+.photo-star {
+    color: #e99aaa;
+    font-size: 65px;
+    line-height: 60px;
+    text-align: center;
+
+}
+
+
+
+.photo-star::before {
+left: 16px;
+transform: rotate(45deg);
+transform-origin: 0 100%;
+}
+
+.photo-star::after {
+left: 0;
+transform: rotate(-45deg);
+transform-origin: 100% 100%;
+}
+
+
+.bedside-table {
+position: absolute;
+right: 105px;
+bottom: 72px;
+width: 115px;
+height: 100px;
+background: #d7ad8d;
+border-radius: 8px 8px 4px 4px;
+box-shadow: 0 7px 10px rgba(91, 64, 58, 0.12);
+z-index: 7;
+}
+
+.bedside-table::before {
+content: "";
+position: absolute;
+left: -5px;
+right: -5px;
+top: -5px;
+height: 12px;
+background: #c99879;
+border-radius: 7px;
+}
+
+.drawer {
+position: absolute;
+left: 18px;
+top: 25px;
+width: 79px;
+height: 32px;
+background: #e5c09f;
+border: 2px solid #bb896c;
+border-radius: 5px;
+}
+
+.drawer span {
+position: absolute;
+width: 18px;
+height: 4px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+background: #9c705c;
+border-radius: 4px;
+}
+
+.table-leg {
+position: absolute;
+bottom: -45px;
+width: 10px;
+height: 48px;
+background: #b98265;
+border-radius: 0 0 5px 5px;
+}
+
+.table-leg.left {
+left: 12px;
+}
+
+.table-leg.right {
+right: 12px;
+}
+
+
+
+.bookshelf {
+position: absolute;
+left: 10%;
+bottom: 170px;
+width: 125px;
+height: 185px;
+z-index: 6;
+}
+
+/* wooden top */
+
+.shelf-top {
+position: absolute;
+top: 0;
+left: -6px;
+width: 137px;
+height: 12px;
+background: #c99b7c;
+border-radius: 6px;
+box-shadow: 0 4px 7px rgba(90, 60, 55, 0.12);
+}
+
+/* books */
+
+.shelf-books {
+position: absolute;
+left: 10px;
+top: 17px;
+width: 105px;
+height: 58px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+gap: 4px;
+}
+
+.book {
+display: block;
+width: 18px;
+border-radius: 3px 3px 1px 1px;
+box-shadow: inset -3px 0 rgba(80, 50, 60, 0.08);
+}
+
+.book-pink {
+height: 45px;
+background: #e7a6b5;
+}
+
+.book-lavender {
+height: 52px;
+background: #b8a6d8;
+}
+
+.book-yellow {
+height: 39px;
+background: #e7ca78;
+}
+
+.book-blue {
+height: 48px;
+background: #9fc8d4;
+}
+
+.book-green {
+height: 42px;
+background: #a9c9ad;
+}
+
+/* shelf between rows */
+
+.shelf-row {
+position: absolute;
+left: 0;
+top: 73px;
+width: 125px;
+height: 10px;
+background: #c99b7c;
+border-radius: 4px;
+}
+
+/* second row */
+
+.bottom-books {
+top: 88px;
+height: 55px;
+}
+
+.bottom-row {
+top: 144px;
+}
+
+/* little wooden legs */
+
+.shelf-leg {
+position: absolute;
+bottom: 0;
+width: 10px;
+height: 42px;
+background: #b98265;
+border-radius: 0 0 4px 4px;
+}
+
+.shelf-leg-left {
+left: 8px;
+}
+
+.shelf-leg-right {
+right: 8px;
 }
