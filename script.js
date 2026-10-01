@@ -1,7 +1,3 @@
-/* ================================
-MY VIRTUAL PET
-================================ */
-
 
 const defaultState = {
 
@@ -45,9 +41,7 @@ let memoryFirst = null;
 let memoryLock = false;
 
 
-/* ================================
-HELPERS
-================================ */
+
 
 
 const $ = id =>
@@ -87,9 +81,6 @@ JSON.stringify(state)
 }
 
 
-/* ================================
-RENDER
-================================ */
 
 
 function setBar(
@@ -210,9 +201,6 @@ mood.style.background =
 }
 
 
-/* ================================
-SPEECH
-================================ */
 
 
 function speak(message) {
@@ -223,9 +211,6 @@ message;
 }
 
 
-/* ================================
-BIG SPARKLES
-================================ */
 
 
 function actionSparkles() {
@@ -317,11 +302,6 @@ setTimeout(
 }
 
 
-/* ================================
-LITTLE SPARKLES
-================================ */
-
-
 function floatSparkle() {
 
 const element =
@@ -353,10 +333,6 @@ setTimeout(
 }
 
 
-/* ================================
-FEEDING
-================================ */
-
 
 const foods = {
 
@@ -373,14 +349,14 @@ energy: 1,
 cost: 3,
 
 line:
-"That was so sweet. More, please?"
+"That was so sweet!! More, please?"
 
 },
 
 
 milk: {
 
-name: "warm milk",
+name: "",
 
 hunger: 17,
 
@@ -414,9 +390,9 @@ line:
 },
 
 
-berry: {
+cookies: {
 
-name: "berry bowl",
+name: "pulo's cookies",
 
 hunger: 20,
 
@@ -427,7 +403,7 @@ energy: 4,
 cost: 4,
 
 line:
-"Berry good. I had to say it."
+"pulo's cookies are really yummy."
 
 }
 
@@ -502,10 +478,6 @@ save();
 }
 
 
-/* ================================
-BATH
-================================ */
-
 
 function bath() {
 
@@ -528,7 +500,7 @@ adjust(
 
 
 speak(
-"All clean! I smell like a tiny cloud."
+"All clean! I smell like so good."
 );
 
 
@@ -541,10 +513,6 @@ save();
 
 }
 
-
-/* ================================
-SLEEP
-================================ */
 
 
 function sleepPet() {
@@ -593,7 +561,7 @@ state.lamp = true;
 
 
 speak(
-"Good morning! I dreamed about cake."
+"Good morning! I dreamed about getting chased by chamie."
 );
 
 
@@ -606,9 +574,6 @@ save();
 }
 
 
-/* ================================
-PETTING
-================================ */
 
 
 function pet() {
@@ -621,17 +586,17 @@ adjust(
 
 const messages = [
 
-"That tickles.",
+"That tickles!!",
 
-"Best little pats.",
+"awww",
 
-"Pulo is the best.",
+"Pulo is the best!!",
 
-"I love hanging out with you.",
+"I love hanging out with you<3",
 
-"Again, again!",
+"Aww, I feel so loved<3",
 
-"That made my whole day."
+"I love you all so much<3",
 
 ];
 
@@ -656,30 +621,26 @@ save();
 }
 
 
-/* ================================
-TALK
-================================ */
-
 
 function talk() {
 
 const lines = [
 
-"Pulo is the best.",
+"Pulo is the best!!",
 
-"I think we need a bigger wardrobe.",
+"ruby and lika are scary sometimes, but I love them",
 
 "Do you think my ears look cute?",
 
-"I have a very important question: snacks?",
+"chamie stole my food again!",
 
-"Thank you for taking care of me.",
+"Thank you for taking care of me<3",
 
-"If I had a trophy, it would say Best Bear.",
+"pulo is cooler than tsuki",
 
-"You came back! I missed you.",
+"You came back! I missed you",
 
-"I am small, but my personality is huge."
+"pulo said I could have a cookie, right?",
 
 ];
 
@@ -748,10 +709,6 @@ save();
 }
 
 
-/* ================================
-WARDROBE
-================================ */
-
 
 function wardrobe() {
 
@@ -772,21 +729,21 @@ const items = [
 ],
 
 [
-"beret",
-"lavender beret",
-"very serious fashion",
-"outfit-beret"
+"towel",
+"little towel",
+"its random but cute ><",
+"outfit-towel"
 ],
 
 [
 "flower",
 "pink flower",
-"a flower for your bear",
+"so cute!",
 "outfit-flower"
 ],
 
 [
-"",
+    "none",
 "no accessory",
 "back to basics",
 ""
@@ -847,8 +804,8 @@ button.dataset.outfit;
 
 speak(
 state.outfit
-? "Fashion icon unlocked."
-: "Simple is cute too."
+? "hehe, I look cute!"
+: "Simple is cute too<3"
 );
 
 
@@ -865,9 +822,7 @@ save();
 }
 
 
-/* ================================
-FOOD MENU
-================================ */
+
 
 
 function foodMenu() {
@@ -914,7 +869,7 @@ class="draw-icon food-milk"
 ></div>
 
 <b>
-warm milk
+ milk
 </b>
 
 <small>
@@ -946,15 +901,15 @@ tiny cake
 
 <button
 class="choice"
-data-food="berry"
+data-food="cookies"
 >
 
 <div
-class="draw-icon food-berry"
+class="draw-icon food-cookies"
 ></div>
 
 <b>
-berry bowl
+pulo's cookies
 </b>
 
 <small>
@@ -994,9 +949,7 @@ button.dataset.food
 }
 
 
-/* ================================
-MODALS
-================================ */
+
 
 
 function openModal(content) {
@@ -1026,9 +979,7 @@ gameTimer
 }
 
 
-/* ================================
-MINI GAMES
-================================ */
+
 
 
 function games() {
@@ -1112,9 +1063,7 @@ startMemory();
 }
 
 
-/* ================================
-STAR CATCHER
-================================ */
+
 
 
 function startStars() {
@@ -1263,9 +1212,6 @@ save();
 }
 
 
-/* ================================
-MEMORY GAME
-================================ */
 
 
 function startMemory() {
@@ -1442,10 +1388,6 @@ false;
 }
 
 
-/* ================================
-BUTTON CONNECTIONS
-================================ */
-
 
 $("closeModal").onclick =
 closeModal;
@@ -1522,17 +1464,12 @@ sleepPet();
 });
 
 
-/* ================================
-BEAR
-================================ */
+
 
 $("petWrap").onclick =
 pet;
 
 
-/* ================================
-LAMP
-================================ */
 
 $("lamp").onclick = () => {
 
@@ -1542,8 +1479,8 @@ state.lamp =
 
 speak(
 state.lamp
-? "Cozy lamp on."
-: "Goodnight... fairy lights on."
+? "zzz."
+: "sweet dreams."
 );
 
 
@@ -1553,10 +1490,6 @@ save();
 
 };
 
-
-/* ================================
-RENAME
-================================ */
 
 $("renameBtn").onclick =
 () => {
@@ -1595,9 +1528,7 @@ speak(
 );
 
 
-/* ================================
-STAT DECAY
-================================ */
+
 
 setInterval(() => {
 
@@ -1632,18 +1563,10 @@ save();
 }, 10000);
 
 
-/* ================================
-BACKGROUND SPARKLES
-================================ */
-
 setInterval(
 floatSparkle,
 1500
 );
 
-
-/* ================================
-START GAME
-================================ */
 
 render();
