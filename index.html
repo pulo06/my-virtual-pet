@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my virtual pet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sparkle-layer" id="sparkles"></div>
+
+<main class="app">
+
+<header class="top">
+<div>
+<p class="eyebrow">a tiny friend on your screen</p>
+<h1>my virtual pet</h1>
+<p class="pulo-name">-pulo</p>
+</div>
+
+<div class="coin-pill">
+<span class="coin-icon"></span>
+<b id="coins">35</b>
+</div>
+</header>
+
+
+<section class="game-shell">
+
+<div class="room" id="room">
+
+<div class="wall-stars">
+<i></i><i></i><i></i><i></i><i></i>
+</div>
+
+
+<!-- FAIRY LIGHTS -->
+
+<div class="fairy-lights">
+<span></span><span></span><span></span>
+<span></span><span></span><span></span>
+<span></span><span></span><span></span>
+<span></span><span></span><span></span>
+</div>
+
+
+<!-- WINDOW -->
+
+<div class="window">
+
+<span class="moon"></span>
+
+<span class="cloud c1"></span>
+<span class="cloud c2"></span>
+
+<span class="night-stars">
+<i></i><i></i><i></i>
+<i></i><i></i>
+</span>
+
+</div>
+
+
+<!-- SMALL TABLE -->
+
+<div class="side-table">
+
+<div class="table-top"></div>
+
+<div class="table-leg tl"></div>
+<div class="table-leg tr"></div>
+
+<div class="table-drawer"></div>
+
+<div class="table-object vase-object"></div>
+<div class="table-object book-object"></div>
+
+</div>
+
+
+<!-- LAMP -->
+
+<div class="lamp" id="lamp">
+
+<div class="lamp-glow"></div>
+
+<div class="lamp-shade"></div>
+
+<div class="lamp-stem"></div>
+
+<div class="lamp-base"></div>
+
+</div>
+
+
+<!-- BED -->
+
+<div class="bed">
+<div class="pillow"></div>
+<div class="blanket"></div>
+<div class="bed-leg"></div>
+</div>
+
+
+<!-- FLOOR -->
+
+<div class="rug"></div>
+
+<div class="floor-toy ball-toy"></div>
+
+<div class="floor-book book-one"></div>
+<div class="floor-book book-two"></div>
+
+<div class="small-block block-one"></div>
+<div class="small-block block-two"></div>
+
+
+<!-- BEAR -->
+
+<div class="pet-wrap" id="petWrap">
+
+<div class="pet-shadow"></div>
+
+<div class="bear">
+
+<div class="ear ear-left"></div>
+<div class="ear ear-right"></div>
+
+<div class="head">
+
+<div class="eye eye-left"></div>
+<div class="eye eye-right"></div>
+
+<div class="muzzle">
+<div class="nose"></div>
+<div class="mouth"></div>
+</div>
+
+<div class="cheek cheek-left"></div>
+<div class="cheek cheek-right"></div>
+
+</div>
+
+
+<div class="body">
+
+<div class="belly"></div>
+
+<div class="arm arm-left"></div>
+<div class="arm arm-right"></div>
+
+<div class="leg leg-left"></div>
+<div class="leg leg-right"></div>
+
+</div>
+
+
+<div class="accessory" id="accessory"></div>
+
+</div>
+
+</div>
+
+
+<div class="speech" id="speech">
+Hi, Pulo! I was waiting for you.
+</div>
+
+<div class="tap-hint">
+tap your bear
+</div>
+
+</div>
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="name-card">
+
+<div class="mini-bear"></div>
+
+<div>
+<span>your little bear</span>
+
+<input
+id="petName"
+value="Mochi"
+maxlength="14"
+>
+</div>
+
+<button
+class="tiny-button"
+id="renameBtn"
+>
+save
+</button>
+
+</div>
+
+
+<div class="stats-card">
+
+<div class="card-title">
+<span>how is my bear?</span>
+<span
+class="mood-dot"
+id="moodDot"
+></span>
+</div>
+
+
+<div class="stat">
+
+<div>
+<span>hunger</span>
+<b id="hungerText">72%</b>
+</div>
+
+<div class="bar">
+<span id="hungerBar"></span>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div>
+<span>happiness</span>
+<b id="happyText">84%</b>
+</div>
+
+<div class="bar">
+<span id="happyBar"></span>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div>
+<span>energy</span>
+<b id="energyText">88%</b>
+</div>
+
+<div class="bar">
+<span id="energyBar"></span>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div>
+<span>cleanliness</span>
+<b id="cleanText">78%</b>
+</div>
+
+<div class="bar">
+<span id="cleanBar"></span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ACTIONS -->
+
+<nav class="actions">
+
+<button
+class="action"
+data-panel="food"
+>
+<span class="svg-icon food-icon"></span>
+<b>feed</b>
+<small>choose a snack</small>
+</button>
+
+
+<button
+class="action"
+data-action="bath"
+>
+<span class="svg-icon bath-icon"></span>
+<b>bath</b>
+<small>freshen up</small>
+</button>
+
+
+<button
+class="action"
+data-action="sleep"
+>
+<span class="svg-icon sleep-icon"></span>
+<b>sleep</b>
+<small>restore energy</small>
+</button>
+
+
+<button
+class="action"
+data-panel="wardrobe"
+>
+<span class="svg-icon closet-icon"></span>
+<b>dress up</b>
+<small>pick an outfit</small>
+</button>
+
+
+<button
+class="action"
+data-panel="games"
+>
+<span class="svg-icon game-icon"></span>
+<b>mini games</b>
+<small>earn coins</small>
+</button>
+
+
+<button
+class="action"
+data-panel="talk"
+>
+<span class="svg-icon talk-icon"></span>
+<b>talk</b>
+<small>say something</small>
+</button>
+
+</nav>
+
+
+<div class="tip-card">
+
+<span class="tip-star"></span>
+
+<p id="tip">
+Tip: keep your bear happy by playing with him.
+</p>
+
+</div>
+
+</aside>
+
+</section>
+
+</main>
+
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+
+<div class="modal-card">
+
+<button
+class="close"
+id="closeModal"
+>
+close
+</button>
+
+<div id="modalContent"></div>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
